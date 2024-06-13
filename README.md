@@ -9,3 +9,10 @@ However, Garmin's computer software (Garmin Express) support using Windows Media
 ``pip install -r requirements.txt``
 3. Execute``python mainGUI.py``.
 4. Or choose the prebuilt file from release.
+
+## How to use
+1. Copy the music file back to your PC from your watch or download your music file
+2. Place the music files into a directory acting as a library.
+3. In the program click "Choose Folder" and select your library folder.
+4. Click "Create Playlist" and now you can find your .m3u8 file in the library folder as All.m3u8.
+5. Copy back songs and .m3u8 file, and you may use the "Playlist" section on your watch to find the imported playlist.
