@@ -12,7 +12,7 @@ However, Garmin's computer software (Garmin Express) support using Windows Media
 3. Install requirements:
 ``pip install -r requirements.txt``
 4. Execute``python mainGUI.py``.
-5. Or choose the prebuilt file from release.
+5. Or just download the prebuilt file from release and run it (Windows version only!).
 
 ## How to use
 1. Copy the music file back to your PC from your watch or download your music file
