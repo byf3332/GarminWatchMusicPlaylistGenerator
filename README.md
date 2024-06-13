@@ -3,12 +3,14 @@ Numerous models of Garmin watch (fr245m, fr645m, fr265, fr945, fr955 etc.) suppo
 
 However, Garmin's computer software (Garmin Express) support using Windows Media Player playlist or itunes playlist to create a .m3u8 file for watch, which gives user **the ability to control the sequence.** So I wrote this little tool to generate a sorted playlist with alphabetical order and also Hanyu Pinyin order to better help users to find their songs. 
 
+
 ## How to run
-1. clone the repository or download zip.
-2. Install requirements:
+1. Please use python 3.10.11.
+2. clone the repository or download zip.
+3. Install requirements:
 ``pip install -r requirements.txt``
-3. Execute``python mainGUI.py``.
-4. Or choose the prebuilt file from release.
+4. Execute``python mainGUI.py``.
+5. Or choose the prebuilt file from release.
 
 ## How to use
 1. Copy the music file back to your PC from your watch or download your music file
