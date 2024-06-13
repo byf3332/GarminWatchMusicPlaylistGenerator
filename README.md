@@ -18,3 +18,4 @@ However, Garmin's computer software (Garmin Express) support using Windows Media
 3. In the program click "Choose Folder" and select your library folder.
 4. Click "Create Playlist" and now you can find your .m3u8 file in the library folder as All.m3u8.
 5. Copy back songs and .m3u8 file, and you may use the "Playlist" section on your watch to find the imported playlist.
+6. If you want a different name for your playlist, simply rename All.m3u8 to AnotherName.m3u8.
