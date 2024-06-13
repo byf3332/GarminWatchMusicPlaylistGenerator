@@ -5,7 +5,7 @@ However, Garmin's computer software (Garmin Express) support using Windows Media
 
 ## How to run
 1. clone the repository or download zip.
-2. Enstall requirements:
+2. Install requirements:
 ``pip install -r requirements.txt``
 3. Execute``python mainGUI.py``.
 4. Or choose the prebuilt file from release.
