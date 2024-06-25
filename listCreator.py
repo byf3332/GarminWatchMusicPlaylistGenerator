@@ -28,8 +28,8 @@ def sort_titles(audio_titles):
     return sorted(audio_titles, key=lambda x: (0 if x[0].isascii() else 1, collator.getSortKey(x[0])))
 
 # function: create m3u8 playlist
-def create_m3u8(sorted_titles, root_directory):
-    output_file = os.path.join(root_directory, 'All.m3u8')
+def create_m3u8(sorted_titles, root_directory, list_name):
+    output_file = os.path.join(root_directory, list_name)
     with open(output_file, 'w', encoding='utf-8') as f:
         for title, file_path in sorted_titles:
             relative_path = os.path.relpath(file_path, start=root_directory)

@@ -31,11 +31,20 @@ def browse_folder():
         path_entry.delete(0, tk.END)
         path_entry.insert(0, directory)
 
+# function: split the list into smaller size
+def split_list(input_list, max_size):
+    return [input_list[i:i + max_size] for i in range(0, len(input_list), max_size)]
+
 # function: click button
 def execute_action():
     audio_titles = listCreator.scan_directory(directory)
     sorted_titles = listCreator.sort_titles(audio_titles)
-    listCreator.create_m3u8(sorted_titles, directory)
+    max_size = 300 # set list max size to 300 to meet Garmin limit
+    split_sorted_titles = split_list(sorted_titles, max_size) # split list
+    for i, sublist in enumerate(split_sorted_titles, 1):
+        count = str(i)
+        list_name = "All Songs" + count + ".m3u8"
+        listCreator.create_m3u8(sublist, directory, list_name)
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     result_label.config(text=f"List stored in folder inputed!: {current_time}")
 # create path entry box
