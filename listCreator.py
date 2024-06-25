@@ -25,7 +25,8 @@ def scan_directory(directory):
 # function: sort titles of audio files
 def sort_titles(audio_titles):
     collator = icu.Collator.createInstance(icu.Locale("zh-CN.UTF-8")) # use chinese environment
-    return sorted(audio_titles, key=lambda x: (0 if x[0].isascii() else 1, collator.getSortKey(x[0])))
+    # check only the first character of the title whether it is ASCII, and sort according to the whole title
+    return sorted(audio_titles, key=lambda x: (0 if x[0][0].isascii() else 1, collator.getSortKey(x[0]))) 
 
 # function: create m3u8 playlist
 def create_m3u8(sorted_titles, root_directory, list_name):
