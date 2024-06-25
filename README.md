@@ -9,7 +9,7 @@ However, Garmin's computer software (Garmin Express) support using Windows Media
 **This tool I created for myself is only tested on my own fr955solar & fr645m, but should work on other models.**
 
 ## How to run
-1. Please use python 3.10.11.
+1. Please use python 3.10.x (Tested on 3.10.11).
 2. Clone the repository or download zip.
 3. Install requirements: ``pip install -r requirements.txt``
 4. Execute: ``python mainGUI.py``.
